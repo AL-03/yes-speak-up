@@ -1,0 +1,85 @@
+@font-face {
+  src: url(fonts/PixelifySans-VariableFont_wght.ttf);
+  font-family: pixel;
+}
+
+.App {
+  text-align: center;
+}
+
+.Earth {
+  height: 80vmin;
+  pointer-events: none;
+  filter: brightness(0.9);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Earth {
+    animation: Earth-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url("space.png");
+  filter: brightness(0.9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes Earth-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ysu {
+  background-color: #CAE9FF;
+  opacity: 80%;
+  border-radius: 100px;
+  padding: 0px 20px 0px 20px;
+  position: fixed;
+  inset: 0px;
+  width: 24rem;
+  height: 10rem;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+}
+
+.App-title {
+  color: #1B4965;
+  font-family: pixel;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.App-subtitle {
+  color: #EBF7FF;
+  font-family: pixel;
+  font-weight: normal;
+  font-size: 1.5rem;
+  position: fixed;
+  margin-top: 12rem;
+}
+
+.instr-backgrnd {
+  background: rgba(235, 247, 255, 0.7);
+  border-radius: 100px;
+  padding: 0px 10px 0px 10px;
+}
+
+.App-instructions {
+  color: #1B4965;
+  font-family: pixel;
+  font-weight: lighter;
+  opacity: 100%;
+  margin: 0 0 0 0;
+}
